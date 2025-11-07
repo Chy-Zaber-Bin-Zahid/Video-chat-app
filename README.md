@@ -248,6 +248,13 @@ You should see: `Server running on port 3001`
 cd client
 npm run dev
 ```
+
+### TURN Credentials (Optional)
+```
+TURN_USERNAME=hqwfeq12hgf32112h6e31948
+TURN_CREDENTIAL=ASDjgj23hhsadsad
+```
+
 You should see: `Local: http://localhost:5173/`
 
 ### Step 5: Test Locally

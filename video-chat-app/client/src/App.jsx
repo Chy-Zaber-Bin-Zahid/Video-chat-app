@@ -4,7 +4,16 @@ import io from 'socket.io-client';
 
 const SOCKET_SERVER = window.location.origin;
 const ICE_SERVERS = {
-  iceServers: [{ urls: 'stun:stun.l.google.com:19302' }]
+  iceServers: [
+      {
+        urls: "stun:stun.relay.metered.ca:80",
+      },
+      {
+        urls: "turn:standard.relay.metered.ca:80",
+        username: import.meta.env.VITE_USERNAME,
+        credential: import.meta.env.VITE_CREDENTIAL,
+      },
+  ],
 };
 
 export default function VideoChat() {
