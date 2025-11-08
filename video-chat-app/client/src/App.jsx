@@ -5,9 +5,7 @@ import io from 'socket.io-client';
 const SOCKET_SERVER = window.location.origin;
 const ICE_SERVERS = {
   iceServers: [
-      {
-        urls: "stun:stun.relay.metered.ca:80",
-      },
+      { urls: 'stun:stun.l.google.com:19302' },
       {
         urls: "turn:standard.relay.metered.ca:80",
         username: import.meta.env.VITE_USERNAME,
